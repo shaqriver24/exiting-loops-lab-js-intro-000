@@ -1,11 +1,11 @@
 function breakOut(array, changeValue, stopValue) {
-  for(let i = 0; i < array.length; i++) {
-    if(array[i] === stopValue) {
-      break;
-    }
-    else {
-      array[i] = changeValue;
-    }
+  if(array[i] === stopValue) {
+    break;
   }
-  return array;
+  else {
+    array.forEach(change => {
+    change[i] = changeValue;
+  })
+}
+return array;
 }
