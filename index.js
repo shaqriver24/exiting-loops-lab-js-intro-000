@@ -3,9 +3,7 @@ function breakOut(array, changeValue, stopValue) {
     break;
   }
   else {
-    array.forEach(change => {
-    change[i] = changeValue;
-  })
-}
-return array;
+    array.forEach(array[i] = changeValue)
+  }
+  return array;
 }
